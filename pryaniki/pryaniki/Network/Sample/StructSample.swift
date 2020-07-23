@@ -2,7 +2,7 @@ import Foundation
 
 struct Sample: Decodable {
     let data: [SampleData]
-    let view: [ViewStruct]
+    let view: [String]
     
     struct SampleData: Decodable {
         let name: String
@@ -93,23 +93,6 @@ struct Sample: Decodable {
                 }
             }
         }
-        
-//        enum CodingKeys: String, CodingKey {
-//            case name
-//            case data
-//        }
-//
-//        init(from decoder: Decoder) throws {
-//            let container = try decoder.container(keyedBy: CodingKeys.self)
-//            name = try container.decode(String.self, forKey: .name)
-//            data = try container.decode(DataType.self, forKey: .data)
-//        }
-        
-    }
-    
-    struct ViewStruct: Codable {
-        let item: String
-    }
 }
 
 //MARK: Errors

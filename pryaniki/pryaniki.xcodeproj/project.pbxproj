@@ -13,7 +13,10 @@
 		3275E3FB24C716A40030FB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3275E3F924C716A40030FB52 /* Main.storyboard */; };
 		3275E3FD24C716A80030FB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3275E3FC24C716A80030FB52 /* Assets.xcassets */; };
 		3275E40024C716A80030FB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3275E3FE24C716A80030FB52 /* LaunchScreen.storyboard */; };
-		3275E40824C71EF10030FB52 /* StructsForJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E40724C71EF10030FB52 /* StructsForJSON.swift */; };
+		3275E40824C71EF10030FB52 /* StructSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E40724C71EF10030FB52 /* StructSample.swift */; };
+		3275E40A24C99CA00030FB52 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E40924C99CA00030FB52 /* Loader.swift */; };
+		3275E40D24C9AABF0030FB52 /* URLMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E40C24C9AABF0030FB52 /* URLMaker.swift */; };
+		3275E41024C9B2A80030FB52 /* SampleLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E40F24C9B2A80030FB52 /* SampleLoaderDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +28,10 @@
 		3275E3FC24C716A80030FB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3275E3FF24C716A80030FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3275E40124C716A80030FB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3275E40724C71EF10030FB52 /* StructsForJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructsForJSON.swift; sourceTree = "<group>"; };
+		3275E40724C71EF10030FB52 /* StructSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructSample.swift; sourceTree = "<group>"; };
+		3275E40924C99CA00030FB52 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		3275E40C24C9AABF0030FB52 /* URLMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLMaker.swift; sourceTree = "<group>"; };
+		3275E40F24C9B2A80030FB52 /* SampleLoaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLoaderDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		3275E3F224C716A40030FB52 /* pryaniki */ = {
 			isa = PBXGroup;
 			children = (
+				3275E40B24C9A8090030FB52 /* Network */,
 				3275E3F324C716A40030FB52 /* AppDelegate.swift */,
 				3275E3F524C716A40030FB52 /* SceneDelegate.swift */,
 				3275E3F724C716A40030FB52 /* ViewController.swift */,
@@ -65,9 +72,27 @@
 				3275E3FC24C716A80030FB52 /* Assets.xcassets */,
 				3275E3FE24C716A80030FB52 /* LaunchScreen.storyboard */,
 				3275E40124C716A80030FB52 /* Info.plist */,
-				3275E40724C71EF10030FB52 /* StructsForJSON.swift */,
 			);
 			path = pryaniki;
+			sourceTree = "<group>";
+		};
+		3275E40B24C9A8090030FB52 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3275E40924C99CA00030FB52 /* Loader.swift */,
+				3275E40C24C9AABF0030FB52 /* URLMaker.swift */,
+				3275E40E24C9B2840030FB52 /* Sample */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3275E40E24C9B2840030FB52 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				3275E40724C71EF10030FB52 /* StructSample.swift */,
+				3275E40F24C9B2A80030FB52 /* SampleLoaderDelegate.swift */,
+			);
+			path = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3275E40824C71EF10030FB52 /* StructsForJSON.swift in Sources */,
+				3275E40D24C9AABF0030FB52 /* URLMaker.swift in Sources */,
+				3275E40A24C99CA00030FB52 /* Loader.swift in Sources */,
+				3275E40824C71EF10030FB52 /* StructSample.swift in Sources */,
 				3275E3F824C716A40030FB52 /* ViewController.swift in Sources */,
 				3275E3F424C716A40030FB52 /* AppDelegate.swift in Sources */,
 				3275E3F624C716A40030FB52 /* SceneDelegate.swift in Sources */,
+				3275E41024C9B2A80030FB52 /* SampleLoaderDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
