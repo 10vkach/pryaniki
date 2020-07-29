@@ -9,9 +9,13 @@ class CustomAlert {
                                       preferredStyle: .alert)
         let action = UIAlertAction(title: "OK",
                                    style: .cancel,
-                                   handler: { _ in alert.removeFromParent() })
+                                   handler: nil)
         alert.addAction(action)
         
         view.present(alert, animated: true)
+    }
+    
+    deinit {
+        print("CustomAlert deinit")
     }
 }

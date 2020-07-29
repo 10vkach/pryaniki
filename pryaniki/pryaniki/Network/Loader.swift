@@ -40,4 +40,8 @@ class Loader {
             }
         }
     }
+    
+    deinit {
+        print("Loader deinit")
+    }
 }

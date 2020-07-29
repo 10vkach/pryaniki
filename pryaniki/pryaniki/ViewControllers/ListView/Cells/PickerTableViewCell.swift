@@ -4,7 +4,7 @@ import UIKit
 class PickerTableViewCell: UITableViewCell, UIPickerViewDataSource, UIPickerViewDelegate {
         
     private var data: Sample.SampleData.SelectorData?
-    private var superDelegate: PickerViewSuperDelegate?
+    private weak var superDelegate: PickerViewSuperDelegate?
     private var selfIndexPath: IndexPath?
     
     @IBOutlet weak var picker: UIPickerView!

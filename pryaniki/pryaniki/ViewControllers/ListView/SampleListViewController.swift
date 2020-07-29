@@ -5,7 +5,7 @@ protocol SampleListView: class {
     func setSampleList(sampleList: SampleListModel)
 }
 
-protocol PickerViewSuperDelegate {
+protocol PickerViewSuperDelegate: class {
     func pickerView(pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inCell indexPath: IndexPath)
@@ -83,9 +83,14 @@ class SampleListViewController: UIViewController, UITableViewDataSource, UITable
             resultString.append(contentsOf: "Selected cell: \(indexPath)\n")
         }
         if let row = row {
-            resultString.append(contentsOf: "Selected item: \(row)")
+            resultString.append(contentsOf: "Selected variant: \(row)")
         }
         return resultString
+    }
+    
+//MARK: Actions
+    @IBAction func actionBack(_ sender: UIButton) {
+        self.dismiss(animated: true)
     }
     
 //MARK: LocalConstants
@@ -93,6 +98,11 @@ class SampleListViewController: UIViewController, UITableViewDataSource, UITable
         let textCellID = "textCellID"
         let pictureCellID = "pictureCellID"
         let selectorCellID = "selecorCellID"
+    }
+    
+    
+    deinit {
+        print("SamplelistViewController deinit")
     }
     
 }
