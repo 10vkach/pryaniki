@@ -68,7 +68,6 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="GxM-Jy-wiA" secondAttribute="trailing" id="rcl-qL-U7f"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="labelText" destination="GxM-Jy-wiA" id="jaW-oc-GOV"/>
                                         </connections>
@@ -103,7 +102,6 @@
                                                 <constraint firstItem="t0U-37-STT" firstAttribute="trailing" secondItem="raK-sN-cQA" secondAttribute="leading" constant="-16" id="adE-MT-7Uz"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="imageData" destination="t0U-37-STT" id="pcU-YS-yz9"/>
                                             <outlet property="labelData" destination="raK-sN-cQA" id="RTo-04-p55"/>
@@ -127,7 +125,6 @@
                                                 <constraint firstAttribute="bottom" secondItem="3rV-Yl-r8Y" secondAttribute="bottom" id="wFO-cb-fXB"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="picker" destination="3rV-Yl-r8Y" id="akM-Sz-VFJ"/>
                                         </connections>
