@@ -5,7 +5,7 @@ protocol SampleListView: class {
     func setSampleList(sampleList: SampleListModel)
 }
 
-protocol PickerViewSuperDelegate {
+protocol PickerViewSuperDelegate: class {
     func pickerView(pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inCell indexPath: IndexPath)
