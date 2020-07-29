@@ -61,10 +61,31 @@ class SampleListViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showSelectionInfo(message: messageBuilder(indexPath: indexPath))
+    }
+    
 //MARK: PickerViewSuperDelegate
     func pickerView(pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inCell indexPath: IndexPath) {
+        showSelectionInfo(message: messageBuilder(indexPath: indexPath, row: row))
+    }
+    
+//MARK: PrivateMethods
+    private func showSelectionInfo(message: String) {
+        CustomAlert().show(inView: self, message: message)
+    }
+    
+    private func messageBuilder(indexPath: IndexPath? = nil, row: Int? = nil) -> String {
+        var resultString = String()
+        if let indexPath = indexPath {
+            resultString.append(contentsOf: "Selected cell: \(indexPath)\n")
+        }
+        if let row = row {
+            resultString.append(contentsOf: "Selected item: \(row)")
+        }
+        return resultString
     }
     
 //MARK: LocalConstants
