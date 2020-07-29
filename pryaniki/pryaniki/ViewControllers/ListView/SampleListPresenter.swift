@@ -20,4 +20,7 @@ class SampleList: SampleListPresenter {
         sampleListView.setSampleList(sampleList: sampleListModel)
     }
     
+    deinit {
+        print("SampleList deinit")
+    }
 }
