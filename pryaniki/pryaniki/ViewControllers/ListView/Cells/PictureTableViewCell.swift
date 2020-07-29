@@ -8,5 +8,6 @@ class PictureTableViewCell: UITableViewCell {
     
     func setUI(data: Sample.SampleData.PictureData) {
         labelData.text = data.text
+        imageData.load(url: data.url)
     }
 }

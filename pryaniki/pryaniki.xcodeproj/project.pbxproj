@@ -10,6 +10,7 @@
 		3230CCAB24D0387A00211F38 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCAA24D0387A00211F38 /* TextTableViewCell.swift */; };
 		3230CCAD24D03A5900211F38 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCAC24D03A5900211F38 /* PictureTableViewCell.swift */; };
 		3230CCAF24D04D5F00211F38 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCAE24D04D5F00211F38 /* PickerTableViewCell.swift */; };
+		3230CCB224D16F5D00211F38 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCB124D16F5D00211F38 /* UIImageView.swift */; };
 		3275E3F424C716A40030FB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E3F324C716A40030FB52 /* AppDelegate.swift */; };
 		3275E3F624C716A40030FB52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E3F524C716A40030FB52 /* SceneDelegate.swift */; };
 		3275E3F824C716A40030FB52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E3F724C716A40030FB52 /* MainViewController.swift */; };
@@ -30,6 +31,7 @@
 		3230CCAA24D0387A00211F38 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		3230CCAC24D03A5900211F38 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
 		3230CCAE24D04D5F00211F38 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		3230CCB124D16F5D00211F38 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		3275E3F024C716A40030FB52 /* pryaniki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pryaniki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3275E3F324C716A40030FB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3275E3F524C716A40030FB52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		3230CCB024D16F3A00211F38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3230CCB124D16F5D00211F38 /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3275E3E724C716A40030FB52 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		3275E3F224C716A40030FB52 /* pryaniki */ = {
 			isa = PBXGroup;
 			children = (
+				3230CCB024D16F3A00211F38 /* Extensions */,
 				3275E41924CF06880030FB52 /* ViewControllers */,
 				3275E40B24C9A8090030FB52 /* Network */,
 				3275E3F324C716A40030FB52 /* AppDelegate.swift */,
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3275E40D24C9AABF0030FB52 /* URLMaker.swift in Sources */,
+				3230CCB224D16F5D00211F38 /* UIImageView.swift in Sources */,
 				3275E41B24D01B380030FB52 /* Constants.swift in Sources */,
 				3275E40A24C99CA00030FB52 /* Loader.swift in Sources */,
 				3275E41824CEF8510030FB52 /* SampleListPresenter.swift in Sources */,

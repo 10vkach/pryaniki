@@ -42,8 +42,12 @@ class PickerTableViewCell: UITableViewCell, UIPickerViewDataSource, UIPickerView
                     didSelectRow row: Int,
                     inComponent component: Int) {
         
+        guard let safeIndexPath = selfIndexPath else {
+            print("Ошибка: selfIndexPath == nil")
+            return }
+        
         superDelegate?.pickerView(pickerView: picker,
                                   didSelectRow: row,
-                                  inCell: selfIndexPath ?? IndexPath(item: 0, section: 0))
+                                  inCell: safeIndexPath)
     }
 }

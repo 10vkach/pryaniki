@@ -47,34 +47,34 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="textCellID" id="SAX-CR-1eF" customClass="TextTableViewCell" customModule="pryaniki" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="53"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="textCellID" id="pXP-ru-1th" customClass="TextTableViewCell" customModule="pryaniki" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SAX-CR-1eF" id="TBm-6b-7EF" customClass="TextTableViewCell" customModule="pryaniki" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pXP-ru-1th" id="vmk-m6-HgO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="War-Kt-kmi">
-                                                    <rect key="frame" x="16" y="16" width="382" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxM-Jy-wiA">
+                                                    <rect key="frame" x="20" y="11" width="374" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="War-Kt-kmi" secondAttribute="bottom" constant="16" id="Ic4-hf-4nY"/>
-                                                <constraint firstAttribute="trailing" secondItem="War-Kt-kmi" secondAttribute="trailing" constant="16" id="IvL-tu-8Q6"/>
-                                                <constraint firstItem="War-Kt-kmi" firstAttribute="leading" secondItem="TBm-6b-7EF" secondAttribute="leading" constant="16" id="fPk-LM-VXI"/>
-                                                <constraint firstItem="War-Kt-kmi" firstAttribute="top" secondItem="TBm-6b-7EF" secondAttribute="top" constant="16" id="s4O-O1-Agh"/>
+                                                <constraint firstItem="GxM-Jy-wiA" firstAttribute="top" secondItem="vmk-m6-HgO" secondAttribute="topMargin" id="PKB-7d-67X"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GxM-Jy-wiA" secondAttribute="bottom" id="foP-Ud-2Uq"/>
+                                                <constraint firstItem="GxM-Jy-wiA" firstAttribute="leading" secondItem="vmk-m6-HgO" secondAttribute="leadingMargin" id="k1H-gG-MDq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GxM-Jy-wiA" secondAttribute="trailing" id="rcl-qL-U7f"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="labelText" destination="War-Kt-kmi" id="oEn-md-bfx"/>
+                                            <outlet property="labelText" destination="GxM-Jy-wiA" id="jaW-oc-GOV"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pictureCellID" id="EwV-eo-g8Z" customClass="PictureTableViewCell" customModule="pryaniki" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="81" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EwV-eo-g8Z" id="p32-82-HHy">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -110,7 +110,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="selecorCellID" id="x2B-yi-nmn" customClass="PickerTableViewCell" customModule="pryaniki" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="124" width="414" height="216.5"/>
+                                        <rect key="frame" x="0.0" y="114.5" width="414" height="216.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x2B-yi-nmn" id="9HP-2h-bcR">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="216.5"/>

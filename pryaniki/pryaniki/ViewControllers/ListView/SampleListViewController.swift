@@ -61,17 +61,10 @@ class SampleListViewController: UIViewController, UITableViewDataSource, UITable
         }
     }
     
-    private func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) {
-        print("selected row -> ", indexPath.row)
-    }
-    
 //MARK: PickerViewSuperDelegate
     func pickerView(pickerView: UIPickerView,
                     didSelectRow row: Int,
                     inCell indexPath: IndexPath) {
-        
-        print("selected picker row -> ", row)
-        print("in Cell -> ", indexPath)
     }
     
 //MARK: LocalConstants
