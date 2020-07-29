@@ -2,10 +2,9 @@ import UIKit
 
 class MainViewController: UIViewController, SampleLoaderDelegate {
     
-    let loader = Loader()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let loader = Loader()
         loader.sampleLoaderDelegate = self
         loader.loadSample()
     }

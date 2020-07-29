@@ -43,19 +43,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhD-NQ-20J">
+                                <rect key="frame" x="0.0" y="822" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rAG-kh-x82"/>
+                                </constraints>
+                                <state key="normal" title="Назад"/>
+                                <connections>
+                                    <action selector="actionBack:" destination="ES3-Sp-fnB" eventType="touchUpInside" id="bk2-o2-A3b"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ht1-Td-W1M">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="textCellID" id="pXP-ru-1th" customClass="TextTableViewCell" customModule="pryaniki" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pXP-ru-1th" id="vmk-m6-HgO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxM-Jy-wiA">
-                                                    <rect key="frame" x="20" y="11" width="374" height="21.5"/>
+                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -73,20 +83,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pictureCellID" id="EwV-eo-g8Z" customClass="PictureTableViewCell" customModule="pryaniki" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="71" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EwV-eo-g8Z" id="p32-82-HHy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t0U-37-STT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="43.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="iul-BK-ni2"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raK-sN-cQA">
-                                                    <rect key="frame" x="66" y="11" width="328" height="21"/>
+                                                    <rect key="frame" x="66" y="11" width="328" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -138,9 +148,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="8tc-WA-wej" firstAttribute="bottom" secondItem="ht1-Td-W1M" secondAttribute="bottom" id="FMC-Qp-CEK"/>
+                            <constraint firstItem="ht1-Td-W1M" firstAttribute="bottom" secondItem="UhD-NQ-20J" secondAttribute="top" id="FMC-Qp-CEK"/>
                             <constraint firstItem="ht1-Td-W1M" firstAttribute="leading" secondItem="8tc-WA-wej" secondAttribute="leading" id="Iy8-GE-nZu"/>
+                            <constraint firstItem="UhD-NQ-20J" firstAttribute="leading" secondItem="8tc-WA-wej" secondAttribute="leading" id="ZiO-KQ-BxR"/>
+                            <constraint firstItem="8tc-WA-wej" firstAttribute="bottom" secondItem="UhD-NQ-20J" secondAttribute="bottom" id="auu-fB-nbz"/>
                             <constraint firstItem="ht1-Td-W1M" firstAttribute="top" secondItem="8tc-WA-wej" secondAttribute="top" id="gaP-sZ-sru"/>
+                            <constraint firstItem="8tc-WA-wej" firstAttribute="trailing" secondItem="UhD-NQ-20J" secondAttribute="trailing" id="tfI-2E-P1o"/>
                             <constraint firstItem="8tc-WA-wej" firstAttribute="trailing" secondItem="ht1-Td-W1M" secondAttribute="trailing" id="xaR-X1-MQG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8tc-WA-wej"/>
