@@ -1,6 +1,6 @@
 import Foundation
 
-protocol SampleLoaderDelegate: AnyObject {
+protocol SampleLoaderDelegate: class {
     func sampleLoaded(sample: Sample)
     func sampleLoadingError(error: Error)
 }

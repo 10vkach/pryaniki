@@ -93,6 +93,7 @@ struct Sample: Decodable {
                 }
             }
         }
+    }
 }
 
 //MARK: Errors

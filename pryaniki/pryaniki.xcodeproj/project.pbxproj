@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3230CCAB24D0387A00211F38 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCAA24D0387A00211F38 /* TextTableViewCell.swift */; };
+		3230CCAD24D03A5900211F38 /* PictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCAC24D03A5900211F38 /* PictureTableViewCell.swift */; };
+		3230CCAF24D04D5F00211F38 /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCAE24D04D5F00211F38 /* PickerTableViewCell.swift */; };
+		3230CCB224D16F5D00211F38 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCB124D16F5D00211F38 /* UIImageView.swift */; };
+		3230CCB524D174DB00211F38 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3230CCB424D174DB00211F38 /* Alert.swift */; };
 		3275E3F424C716A40030FB52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E3F324C716A40030FB52 /* AppDelegate.swift */; };
 		3275E3F624C716A40030FB52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E3F524C716A40030FB52 /* SceneDelegate.swift */; };
-		3275E3F824C716A40030FB52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E3F724C716A40030FB52 /* ViewController.swift */; };
+		3275E3F824C716A40030FB52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E3F724C716A40030FB52 /* MainViewController.swift */; };
 		3275E3FB24C716A40030FB52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3275E3F924C716A40030FB52 /* Main.storyboard */; };
 		3275E3FD24C716A80030FB52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3275E3FC24C716A80030FB52 /* Assets.xcassets */; };
 		3275E40024C716A80030FB52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3275E3FE24C716A80030FB52 /* LaunchScreen.storyboard */; };
@@ -17,13 +22,22 @@
 		3275E40A24C99CA00030FB52 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E40924C99CA00030FB52 /* Loader.swift */; };
 		3275E40D24C9AABF0030FB52 /* URLMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E40C24C9AABF0030FB52 /* URLMaker.swift */; };
 		3275E41024C9B2A80030FB52 /* SampleLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E40F24C9B2A80030FB52 /* SampleLoaderDelegate.swift */; };
+		3275E41324CECE5D0030FB52 /* SampleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E41224CECE5D0030FB52 /* SampleListModel.swift */; };
+		3275E41524CEF2270030FB52 /* SampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E41424CEF2270030FB52 /* SampleListViewController.swift */; };
+		3275E41824CEF8510030FB52 /* SampleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E41724CEF8510030FB52 /* SampleListPresenter.swift */; };
+		3275E41B24D01B380030FB52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275E41A24D01B380030FB52 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3230CCAA24D0387A00211F38 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		3230CCAC24D03A5900211F38 /* PictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureTableViewCell.swift; sourceTree = "<group>"; };
+		3230CCAE24D04D5F00211F38 /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		3230CCB124D16F5D00211F38 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		3230CCB424D174DB00211F38 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		3275E3F024C716A40030FB52 /* pryaniki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pryaniki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3275E3F324C716A40030FB52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3275E3F524C716A40030FB52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3275E3F724C716A40030FB52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3275E3F724C716A40030FB52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3275E3FA24C716A40030FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3275E3FC24C716A80030FB52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3275E3FF24C716A80030FB52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +46,10 @@
 		3275E40924C99CA00030FB52 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		3275E40C24C9AABF0030FB52 /* URLMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLMaker.swift; sourceTree = "<group>"; };
 		3275E40F24C9B2A80030FB52 /* SampleLoaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLoaderDelegate.swift; sourceTree = "<group>"; };
+		3275E41224CECE5D0030FB52 /* SampleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListModel.swift; sourceTree = "<group>"; };
+		3275E41424CEF2270030FB52 /* SampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListViewController.swift; sourceTree = "<group>"; };
+		3275E41724CEF8510030FB52 /* SampleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleListPresenter.swift; sourceTree = "<group>"; };
+		3275E41A24D01B380030FB52 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3230CCA924D0386000211F38 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3230CCAA24D0387A00211F38 /* TextTableViewCell.swift */,
+				3230CCAC24D03A5900211F38 /* PictureTableViewCell.swift */,
+				3230CCAE24D04D5F00211F38 /* PickerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3230CCB024D16F3A00211F38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3230CCB124D16F5D00211F38 /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3230CCB324D174B100211F38 /* UIStuff */ = {
+			isa = PBXGroup;
+			children = (
+				3230CCB424D174DB00211F38 /* Alert.swift */,
+			);
+			path = UIStuff;
+			sourceTree = "<group>";
+		};
 		3275E3E724C716A40030FB52 = {
 			isa = PBXGroup;
 			children = (
@@ -64,14 +108,17 @@
 		3275E3F224C716A40030FB52 /* pryaniki */ = {
 			isa = PBXGroup;
 			children = (
+				3230CCB324D174B100211F38 /* UIStuff */,
+				3230CCB024D16F3A00211F38 /* Extensions */,
+				3275E41924CF06880030FB52 /* ViewControllers */,
 				3275E40B24C9A8090030FB52 /* Network */,
 				3275E3F324C716A40030FB52 /* AppDelegate.swift */,
 				3275E3F524C716A40030FB52 /* SceneDelegate.swift */,
-				3275E3F724C716A40030FB52 /* ViewController.swift */,
 				3275E3F924C716A40030FB52 /* Main.storyboard */,
 				3275E3FC24C716A80030FB52 /* Assets.xcassets */,
 				3275E3FE24C716A80030FB52 /* LaunchScreen.storyboard */,
 				3275E40124C716A80030FB52 /* Info.plist */,
+				3275E41A24D01B380030FB52 /* Constants.swift */,
 			);
 			path = pryaniki;
 			sourceTree = "<group>";
@@ -93,6 +140,34 @@
 				3275E40F24C9B2A80030FB52 /* SampleLoaderDelegate.swift */,
 			);
 			path = Sample;
+			sourceTree = "<group>";
+		};
+		3275E41124CECE3F0030FB52 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				3275E41224CECE5D0030FB52 /* SampleListModel.swift */,
+				3275E41424CEF2270030FB52 /* SampleListViewController.swift */,
+				3275E41724CEF8510030FB52 /* SampleListPresenter.swift */,
+				3230CCA924D0386000211F38 /* Cells */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		3275E41624CEF3620030FB52 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				3275E3F724C716A40030FB52 /* MainViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		3275E41924CF06880030FB52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3275E41624CEF3620030FB52 /* MainView */,
+				3275E41124CECE3F0030FB52 /* ListView */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,11 +242,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3275E40D24C9AABF0030FB52 /* URLMaker.swift in Sources */,
+				3230CCB224D16F5D00211F38 /* UIImageView.swift in Sources */,
+				3275E41B24D01B380030FB52 /* Constants.swift in Sources */,
 				3275E40A24C99CA00030FB52 /* Loader.swift in Sources */,
+				3275E41824CEF8510030FB52 /* SampleListPresenter.swift in Sources */,
 				3275E40824C71EF10030FB52 /* StructSample.swift in Sources */,
-				3275E3F824C716A40030FB52 /* ViewController.swift in Sources */,
+				3275E3F824C716A40030FB52 /* MainViewController.swift in Sources */,
+				3230CCAD24D03A5900211F38 /* PictureTableViewCell.swift in Sources */,
+				3230CCAF24D04D5F00211F38 /* PickerTableViewCell.swift in Sources */,
+				3230CCAB24D0387A00211F38 /* TextTableViewCell.swift in Sources */,
 				3275E3F424C716A40030FB52 /* AppDelegate.swift in Sources */,
+				3275E41524CEF2270030FB52 /* SampleListViewController.swift in Sources */,
 				3275E3F624C716A40030FB52 /* SceneDelegate.swift in Sources */,
+				3275E41324CECE5D0030FB52 /* SampleListModel.swift in Sources */,
+				3230CCB524D174DB00211F38 /* Alert.swift in Sources */,
 				3275E41024C9B2A80030FB52 /* SampleLoaderDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
