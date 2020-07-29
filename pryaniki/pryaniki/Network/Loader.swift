@@ -30,7 +30,6 @@ class Loader {
             //распарсить данные и запихать их в массив
             do {
                 let response: Sample = try JSONDecoder().decode(Sample.self, from: dataSafe)
-                print(response)
                 DispatchQueue.main.async {
                     self.sampleLoaderDelegate?.sampleLoaded(sample: response)
                 }
